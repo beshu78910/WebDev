@@ -23,6 +23,10 @@
         <input type="date" id="datename" />
       </p>
       <p>
+        <label for="datename1">Enter your num: </label>
+        <input type="number" id="datename1" min="1" max="1000" />
+      </p>
+      <p>
         <label for="telname">Enter your date: </label>
         <input type="tel" id="telname" />
       </p>
@@ -47,6 +51,53 @@
       <h3>Reddit</h3>
       <input type="text" name="q" />
       <button>Submit</button>
+    </form>
+
+    <hr />
+    <form action="birds">
+      <input type="checkbox" id="scale" name="box1" />
+      <label for="scale">scales</label>
+      <p>
+        <input type="checkbox" id="test" name="box2" />
+        <label for="test">test</label>
+      </p>
+      <button>but</button>
+    </form>
+    <hr />
+    <form action="cat">
+      <label id="test"
+        >XS
+        <input type="radio" id="test" name="search" value="ran" />
+      </label>
+      <label id="test1">
+        S
+        <input type="radio" id="test1" name="search" value="ran1" />
+      </label>
+      <label id="test2">
+        M
+        <input type="radio" id="test2" name="search" value="ran2" />
+      </label>
+      <button>submit</button>
+    </form>
+    <form action="/search">
+      <p>
+        <label for="pet-select">Choose a pet</label>
+        <select name="pets" id="pet-select">
+          <option value="">--Choose an option</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+        </select>
+      </p>
+      <button id="pet-select">submit</button>
+      <label for="rangetest">set range</label>
+      <input type="range" id="rangetest" min="1" max="10" step="2" />
+      <textarea
+        id="request"
+        name="request"
+        cols="50"
+        rows="10"
+        placeholder="typesomething here"
+      ></textarea>
     </form>
   </body>
 </html>
