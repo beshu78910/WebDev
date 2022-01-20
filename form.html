@@ -9,9 +9,44 @@
   <body>
     <h1>Forms Demo</h1>
     <form action="/tacos">
-      <input type="password" />
-      <input type="button" />
-      <input type="color" />
+      <p>
+        <label for="passwordname">Enter your password: </label>
+        <input
+          type="password"
+          placeholder="password"
+          id="passwordname"
+          name="something"
+        />
+      </p>
+      <p>
+        <label for="datename">Enter your date: </label>
+        <input type="date" id="datename" />
+      </p>
+      <p>
+        <label for="telname">Enter your date: </label>
+        <input type="tel" id="telname" />
+      </p>
+      <button type="menu">Nested Button</button>
+    </form>
+    <button>Submit</button>
+    <hr />
+    <!-- Hjacking Google, Youtube, Reddit search -->
+    <form action="https://www.google.com/search">
+      <h3>Google Search</h3>
+      <input type="text" name="q" />
+      <button>Submit</button>
+    </form>
+
+    <form action="https://www.youtube.com/result">
+      <h3>Youtube Search</h3>
+      <input type="text" name="search_query" />
+      <button>Submit</button>
+    </form>
+
+    <form action="https://www.reddit.com/search">
+      <h3>Reddit</h3>
+      <input type="text" name="q" />
+      <button>Submit</button>
     </form>
   </body>
 </html>
