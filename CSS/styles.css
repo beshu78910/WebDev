@@ -1,0 +1,16 @@
+h1 {
+  color: green;
+}
+
+h2 {
+  color: magenta;
+}
+button {
+  color: red;
+  background-color: pink;
+}
+
+p {
+  color: white;
+  background-color: black;
+}
