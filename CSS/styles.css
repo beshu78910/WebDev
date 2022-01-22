@@ -1,16 +1,11 @@
 h1 {
-  color: green;
-}
-
-h2 {
-  color: magenta;
-}
-button {
-  color: red;
-  background-color: pink;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: green wavy overline;
 }
 
 p {
-  color: white;
-  background-color: black;
+  font-size: large;
+  font-family: Segoe UI, Futura, Arial, sans-serif;
+  text-transform: uppercase;
 }
