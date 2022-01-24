@@ -1,0 +1,36 @@
+div {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  background-color: cornsilk;
+}
+
+h1 {
+  background-color: coral;
+  width: 200px;
+  text-align: center;
+}
+
+#p1 {
+  background-color: rgb(170, 29, 128);
+  border: 5px;
+  border-color: burlywood;
+  border-style: solid;
+  /*      top  right bottom left */
+  padding: 20px 10px 15px 200px;
+}
+#p2 {
+  background-color: rgb(20, 18, 185);
+  background-color: rgb(41, 40, 104);
+  border: 5px;
+  border-color: burlywood;
+  border-style: groove;
+  /*      top  right bottom left */
+  margin: 20px 10px 30px 100px;
+}
+/* Using declaring one line method for border: width|style|color */
+#p3 {
+  background-color: rgb(45, 104, 212);
+  border: 5px dotted green;
+  margin: 0cm;
+}
