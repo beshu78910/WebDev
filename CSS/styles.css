@@ -23,11 +23,58 @@ span {
 footer > a {
   color: thistle;
 }
-
-a[href*="googl"] {
-  color: rgb(221, 122, 8);
+button {
+  background-color: chartreuse;
 }
+form > button {
+  background-color: cadetblue;
+}
+
+/* a[href*="googl"] {
+  color: rgb(221, 122, 8);
+} */
 
 input[type="text"] {
   color: rgb(77, 255, 71);
+}
+
+/* Selects any <a> element when "hovered" */
+button:hover {
+  background-color: orange;
+  font-size: 20px;
+}
+a:hover {
+  color: blueviolet;
+  text-decoration: underline;
+}
+
+button:active {
+  background-color: red;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+/* h2::first-line {
+  font-size: 100px;
+} */
+
+p::selection {
+  background-color: hotpink;
+}
+
+h1,
+h2 {
+  color: black;
+}
+/* The second h1,h2 overrided the first one */
+h1,
+h2 {
+  color: green;
+}
+
+h2.p {
+  background-color: chartreuse;
 }
