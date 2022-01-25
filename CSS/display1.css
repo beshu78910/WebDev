@@ -1,17 +1,7 @@
-section {
-  width: 500px;
-  height: 500px;
-  background-color: hotpink;
+li {
+  font-size: 2em;
 }
 
-div {
-  width: 50%;
-  height: 50%;
-  background-color: black;
-}
-
-h1 {
-  font-size: 40px;
-  border: 1px solid black;
-  line-height: 80px;
+ul {
+  font-size: 1.2em;
 }
