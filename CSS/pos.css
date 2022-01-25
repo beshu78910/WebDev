@@ -1,0 +1,31 @@
+#box2 {
+  background-color: rgb(152, 164, 236);
+  border: 5px solid brown;
+  width: 12%;
+  height: 6rem;
+  display: inline-block;
+  margin-right: 1em;
+}
+#absolute {
+  position: relative;
+}
+#absolute #box3 {
+  background-color: rgb(160, 95, 125);
+  border: 5px solid rgb(151, 70, 70);
+  position: absolute;
+  width: 12%;
+  height: 6rem;
+  display: inline-block;
+  margin-right: 1em;
+  top: 50px;
+  left: 50px;
+}
+
+#box4 {
+  background-color: rgb(57, 138, 175);
+  border: 5px solid rgb(151, 70, 70);
+  width: 12%;
+  height: 6rem;
+  display: inline-block;
+  margin-right: 1em;
+}
