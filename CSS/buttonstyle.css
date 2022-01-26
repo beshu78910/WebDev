@@ -1,0 +1,28 @@
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex; /*flex box*/
+  align-items: center; /* align item in the center by Y axis*/
+  justify-content: center; /* move content to the center by X axis */
+  height: 100vh;
+  background-color: black;
+}
+
+button {
+  background: none;
+  color: darkgray;
+  padding: 1em 2em;
+  border-radius: 0.15em;
+  border-style: solid;
+  transition: border-color 1s, color 1s, transform 1s, box-shadow 1s;
+}
+
+button:hover {
+  border-color: yellow;
+  color: whitesmoke;
+  transform: translateY(-0.5em);
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 0.5em 0.5em -0.4em yellow;
+
+  /* Changing cursor shape */
+  cursor: pointer;
+}
