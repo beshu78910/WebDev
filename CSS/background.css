@@ -1,0 +1,20 @@
+section {
+  /* background-color: blanchedalmond; */
+  width: 80%;
+  height: 800px;
+  margin: 0 auto;
+  background-image: url("https://images.unsplash.com/photo-1643149005861-1bba831bb6f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  width: 50%;
+
+  background-size: cover;
+  /* take only the top path of the image */
+  /* as well as bottom, left, right */
+  background-position: left;
+  background: center/cover
+    url("https://images.unsplash.com/photo-1643149005861-1bba831bb6f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
+    no repeat;
+}
+
+h1 {
+  font-size: 100px;
+}

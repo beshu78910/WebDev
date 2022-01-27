@@ -1,0 +1,11 @@
+section {
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  width: 50%;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 100;
+}

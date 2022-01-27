@@ -1,0 +1,51 @@
+body {
+  font-family: "Dongle", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+#container {
+  background-color: #003049;
+  width: 90%;
+
+  margin: 0 auto;
+  border: 5px solid #003049;
+  display: flex; /* This will set */
+  /*change main axis to column type, top->bottom*/
+  flex-direction: row;
+  justify-content: center;
+  /*Change the cross-axis direction from left->right to right->left */
+  flex-wrap: nowrap;
+  align-items: center;
+  /*USING THE Baseline of our text to align the element
+  useful when you have elements where the size is different but
+  want the text to stay at the same position "baseline"*/
+}
+
+#container div {
+  width: 200px;
+  height: 200px;
+  font-size: 5em;
+  flex-basis: 600px;
+}
+
+#container div:nth-of-type(1) {
+  flex-shrink: 2;
+  /* You can prevent the element to grow to small or to large by using 
+*/
+  /* max-width: 300px;
+  min-width: 200px; */
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid black;
+  height: 500px;
+  display: flex;
+}

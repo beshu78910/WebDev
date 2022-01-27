@@ -3,7 +3,7 @@ body {
   display: flex; /*flex box*/
   align-items: center; /* align item in the center by Y axis*/
   justify-content: center; /* move content to the center by X axis */
-  height: 100vh;
+  height: 100vh; /* view port length */
   background-color: black;
 }
 
