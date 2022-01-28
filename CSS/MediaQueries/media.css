@@ -1,0 +1,53 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  font-size: 1.5em;
+  justify-content: space-between;
+}
+
+ul,
+li {
+  display: flex;
+  margin: 0;
+  /*remove bullet decoration by setting padding = 0 */
+  padding: 0;
+  max-width: 50%;
+  flex: 1;
+  justify-content: space-evenly;
+}
+/* When the screen reach exactly 800px
+execute the within operation*/
+
+/* When the screen has minium width of 600 or above and 800 or below
+This set up a range of 600 -> 800px (at this range the color will be change*/
+@media (min-width: 600px) and (max-width: 800px) {
+  h1 {
+    color: rgb(116, 66, 66);
+  }
+}
+/*The viewport is in a landscape orientation, i.e., the width is greater than the height.*/
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3em;
+  }
+  nav,
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
