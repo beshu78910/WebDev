@@ -1,3 +1,3 @@
-let name = " DAN "
-
-nameAfter = name.toLowerCase().trim();
+let days = ['Monday', 'Tuesday', 'Wednesday']
+// You can also check how elements in an array using:
+days.length
