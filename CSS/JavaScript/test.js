@@ -1,3 +1,13 @@
+//PLEASE DON'T TOUCH THIS LINE!
+const restaurant = {
+    name: 'Ichiran Ramen',
+    address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,
+    city: 'Brooklyn',
+    state: 'NY',
+    zipcode: '11206',
+};
 
-const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
-animals.splice(2, 0, 'dog');
+restaurant['lane'] = 'right';
+restaurant['name'] = 'Duy';
+
+console.log(restaurant);
