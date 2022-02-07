@@ -1,13 +1,25 @@
-//PLEASE DON'T TOUCH THIS LINE!
-const restaurant = {
-    name: 'Ichiran Ramen',
-    address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,
-    city: 'Brooklyn',
-    state: 'NY',
-    zipcode: '11206',
-};
+const testScores = {
+    p1: 20,
+    p2: 87,
+    p3: 85,
+    p4: 27,
+    p5: 16,
+    p6: 52
+}
 
-restaurant['lane'] = 'right';
-restaurant['name'] = 'Duy';
 
-console.log(restaurant);
+// Object.values(object)
+// This will return an array of testScores values.
+for (let value of Object.values(testScores)) {
+    console.log(value);
+}
+// Object.key(object)
+// return array of key.
+for (let value of Object.keys(testScores)) {
+    console.log(value);
+}
+// Object.entries(testScores)
+// return array of key and value pair
+for (let value of Object.entries(testScores)) {
+    console.log(value);
+}
