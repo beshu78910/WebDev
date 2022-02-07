@@ -11,7 +11,7 @@ if (request === 'new') {
 
     let addTodo = prompt("Enter new todo");
     todos.push(addTodo);
-    console.log(todos);
+    console.log(`${addTodo} added to the list`);
 } else if (request === 'list') {
         console.log('**********');
         for (let i = 0; i < todos.length; i++) {
@@ -22,13 +22,19 @@ if (request === 'new') {
     
 } else if (request === 'delete') {
 
-    let numsDel = prompt('Enter the item\'s number');
-   
-    todos.splice(numsDel, 1);
-    console.log('Todo Removed');
+    const numsDel = parseInt(prompt('Enter the item\'s number'));
+    if (!Number.isNaN(numsDel)) {
+        const deleted = todos.splice(numsDel, 1);
+    console.log(`Todo Removed ${deleted[0]}`);
     console.log(todos);
+    } else {
+        console.log('Unknow index');
+   }
+   
     
-    } 
+} else if (request === 'q') {
+    console.log("Ok, you have quit");
+    }
 }
 
 
