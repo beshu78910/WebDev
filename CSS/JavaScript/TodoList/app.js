@@ -23,7 +23,7 @@ if (request === 'new') {
 } else if (request === 'delete') {
 
     const numsDel = parseInt(prompt('Enter the item\'s number'));
-    if (!Number.isNaN(numsDel)) {
+    if (!Number.isNaN(numsDel)) { // Check if the input numsDel is not NaN
         const deleted = todos.splice(numsDel, 1);
     console.log(`Todo Removed ${deleted[0]}`);
     console.log(todos);
