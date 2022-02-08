@@ -1,12 +1,19 @@
-function capitalize(argument) {
-    
-let strNoSpace = argument.trim();
+const movies = [
+    {
+        title: 'Stand by Me',
+        score: 85
+    },
+    {
+        title: 'Parasite',
+        score: 95
+    },
+    {
+        title: 'Alien',
+        score: 80
+    }
+]
+// Passed every property of movies array as argument of function (movie)
 
-let firstLetter = (strNoSpace.slice(0, 1)).toUpperCase();
-let noFirst = strNoSpace.slice(1);
-let combine = firstLetter + noFirst;
-    return combine;
-    
-}
-
-capitalize("eggplant");
+movies.forEach(function (movie){
+    console.log(movie.title);
+})
