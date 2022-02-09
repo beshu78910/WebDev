@@ -1,19 +1,22 @@
-const movies = [
-    {
-        title: 'Stand by Me',
-        score: 85
-    },
-    {
-        title: 'Parasite',
-        score: 95
-    },
-    {
-        title: 'Alien',
-        score: 80
-    }
-]
-// Passed every property of movies array as argument of function (movie)
+const prices = [9.99, 1.50, 19.99, 0.50, 30.50];
 
-movies.forEach(function (movie){
-    console.log(movie.title);
-})
+// let total = prices.reduce((accum, current) => {
+//     console.log(accum); // store every sum into accum 
+//     console.log(current); // go until there is no next value 
+//     return accum + current;
+    
+// })
+
+let least = prices.reduce((min, current) => {
+    
+    if (current > min) {
+        // console.log(min);
+        console.log(current); // 19.99, 30.50; ,30.50;
+        return current;
+    }
+    // console.log(min);
+    return min;
+    
+}, 100);
+
+console.log(least);
