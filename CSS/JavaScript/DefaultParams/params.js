@@ -11,16 +11,16 @@ const users = {
 
 
 // OLd way
-// function fullName(user) {
-//     return `${user.name} and ${user.hair}`
-// }
-// fullName(users);
+function fullName(user) {
+    return `${user.name} and ${user.hair}`
+}
+fullName(users);
 
 // Defracturing
-// function fullName(user) {
-//     const { name, age } = user;
-//     return `${name} and ${age}` //does not need user. anymore
-// }
+function fullName(user) {
+    const { name, age } = user;
+    return `${name} and ${age}` //does not need user. anymore
+}
 
 // Another way
 function fullName({ name, password }) {
