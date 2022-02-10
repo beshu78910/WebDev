@@ -17,6 +17,19 @@ let least = prices.reduce((min, current) => {
     // console.log(min);
     return min;
     
-}, 100);
+});
 
 console.log(least);
+// You can add a second argument for reduce function.
+
+let least = prices.reduce((min, current) => {
+    
+    if (current > min) {
+        // console.log(min);
+        console.log(current); // 19.99, 30.50; ,30.50;
+        return current;
+    }
+    // console.log(min);
+    return min;
+    
+}, 100); // The argument will be the inital value for the reducer function 
