@@ -7,16 +7,19 @@ const makeRandColor = () => {
 
 const buttons = document.querySelectorAll('button');
 
-for (let button of buttons) {
-    button.addEventListener('click', colorize)
-}
 
+for (let button of buttons) {
+    button.addEventListener('click', colorize);
+     
+}
 const h1s = document.querySelectorAll('h1');
+
+// This refer to the h1 object
 for (let h1 of h1s) {
     h1.addEventListener('click', colorize)
 }
 
 function colorize() {
-    this.style.backgroundColor = makeRandColor();
-    this.style.color = makeRandColor();
+    this.style.background = makeRandColor();
+    this, style.color = makeRandColor();
 }
