@@ -11,6 +11,11 @@
     <ul>
       <li>Price: <%= productById.price %></li>
       <li>Category: <%= productById.category %></li>
+
+      <form action="/products/<%=product._id%>?_method=DELETE" method="POST">
+        <button>DELETE</button>
+      </form>
+      
     </ul>
   </body>
 </html>
